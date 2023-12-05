@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'League Spartan', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container {
+    justify-content: center;
+    align-items: center; 
+    width: 1440px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+@media (max-width:991px) {
+    .flex {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.flex .text,
+.flex .rate {
+    flex-basis: calc(50%);
+}
+.flex .text  h1{
+font-size:4rem;
+color:hsl(300, 43%, 22%) ;
+margin: 0;
+padding-right: 10rem;
+}
+.flex .text  p{
+    margin:  20px 0;
+font-size:18px;
+line-height: 1.6;
+color:hsl(300, 43%, 22%) ;
+padding-right: 15rem;
+
+}
+@media (max-width:991px) {
+    .flex .text  h1,
+    .flex .text  p {
+        padding-right: 0;
+    }
+}
+.flex .rate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+.flex .rate .start {
+align-self: flex-start;
+}
+.flex .rate .end {
+align-self: flex-end;
+}
+.flex .rate .box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:2rem ;
+    color: hsl(300, 43%, 22%);
+    background-color: hsl(300, 24%, 96%) ;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1rem 4rem;
+}
+
+@media (max-width:991px) {
+    .flex .rate .box {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        width: 100%;
+        padding: 10px;
+    }
+    
+}
+.flex .rate .box .rating img {
+  margin:  5px auto 0 0;
+    
+}
+.flex .rate .box p {
+    font-weight: 700;
+    margin: 0;
+}
+.grid {
+    flex-basis: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+@media (max-width:991px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 1rem;
+    }
+    
+}
+.grid .box {
+    padding: 2rem;
+    background-color:hsl(300, 43%, 22%) ;
+    color: white;
+    border-radius: 1rem;
+}
+@media (min-width:991px) {
+     .box.box-2 {
+        transform: translateY(20px);
+    }
+     .box.box-3 {
+        transform: translateY(40px);
+    }
+}
+
+.grid .box .intro {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.grid .box .intro img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+.grid .box .intro p {
+    margin: 0 0 10px;
+
+}
+.grid .box .intro span {
+    color: hsl(333, 80%, 67%) ;
+
+}
+.grid .box > p {
+    font-size: 18px;
+    line-height: 1.6;
+} 
+
+
+
